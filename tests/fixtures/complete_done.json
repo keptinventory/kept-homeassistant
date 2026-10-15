@@ -1,0 +1,66 @@
+{
+  "serviceRecord": {
+    "id": "01a13f5a-cca5-7339-a313-80b841b9110e",
+    "subject": {
+      "type": "place",
+      "id": "01a13f53-f2f3-76f8-9500-f3d045560d1a",
+      "name": "Living room",
+      "path": "Home",
+      "shortCode": null
+    },
+    "servicedOn": "2026-10-15",
+    "reading": null,
+    "vendor": null,
+    "total": null,
+    "lines": [],
+    "completes": [
+      {
+        "scheduleId": "01a13f54-007c-75cb-9b4a-dc099dd416dc",
+        "name": "Clean the AC filters"
+      }
+    ],
+    "notes": null,
+    "invoices": [],
+    "loggedBy": {
+      "displayName": "Ibrahim"
+    },
+    "rowVersion": 1,
+    "reviewState": "confirmed",
+    "flags": []
+  },
+  "schedule": {
+    "id": "01a13f54-007c-75cb-9b4a-dc099dd416dc",
+    "locationId": "01a13f53-ef1e-7576-9471-e87ea981362a",
+    "subject": {
+      "type": "place",
+      "id": "01a13f53-f2f3-76f8-9500-f3d045560d1a",
+      "name": "Living room",
+      "path": "Home",
+      "shortCode": null
+    },
+    "name": "Clean the AC filters",
+    "everyMonths": 3,
+    "everyUnits": null,
+    "meter": null,
+    "dueOn": null,
+    "leadDays": 14,
+    "leadUnits": null,
+    "anchorOn": "2026-10-15",
+    "anchorValue": null,
+    "next": {
+      "dueOn": "2027-01-15",
+      "dueValue": null,
+      "state": "upcoming",
+      "basis": "months"
+    },
+    "snoozedUntil": null,
+    "snoozedUntilValue": null,
+    "skipNext": false,
+    "active": true,
+    "lastService": {
+      "id": "01a13f5a-cca5-7339-a313-80b841b9110e",
+      "servicedOn": "2026-10-15"
+    },
+    "rowVersion": 1
+  }
+}

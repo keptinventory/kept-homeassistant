@@ -1,0 +1,125 @@
+{
+  "items": [
+    {
+      "key": "loan:01a13f54-002a-752d-b787-488552a39d19:overdue:date:2026-10-12",
+      "sourceType": "loan",
+      "sourceId": "01a13f54-002a-752d-b787-488552a39d19",
+      "kind": "overdue",
+      "state": "overdue",
+      "locationId": "01a13f53-ef1e-7576-9471-e87ea981362a",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-f499-7482-a12a-72ff320dbf71",
+        "name": "Catan",
+        "path": "Home › Living room",
+        "shortCode": "Z6PNAM"
+      },
+      "title": "Catan",
+      "dueOn": "2026-10-12",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "mark_returned",
+        "open"
+      ]
+    },
+    {
+      "key": "schedule:01a13f54-0048-76cc-90b7-f0d9e0ffe75b:due:date:2026-10-23",
+      "sourceType": "schedule",
+      "sourceId": "01a13f54-0048-76cc-90b7-f0d9e0ffe75b",
+      "kind": "due",
+      "state": "due",
+      "locationId": "01a13f53-ef1e-7576-9471-e87ea981362a",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-f5ca-7715-b141-f529a20a6b6d",
+        "name": "Water filter cartridge",
+        "path": "Home › Kitchen",
+        "shortCode": "Z6HVH1"
+      },
+      "title": "Replace the water filter",
+      "dueOn": "2026-10-23",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "complete",
+        "snooze",
+        "open"
+      ]
+    },
+    {
+      "key": "thing_expiry:01a13f53-f5ca-7715-b141-f529a20a6b6d:expiring:date:2026-10-20",
+      "sourceType": "thing_expiry",
+      "sourceId": "01a13f53-f5ca-7715-b141-f529a20a6b6d",
+      "kind": "expiring",
+      "state": "expiring",
+      "locationId": "01a13f53-ef1e-7576-9471-e87ea981362a",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-f5ca-7715-b141-f529a20a6b6d",
+        "name": "Water filter cartridge",
+        "path": "Home › Kitchen",
+        "shortCode": "Z6HVH1"
+      },
+      "title": "Water filter cartridge",
+      "dueOn": "2026-10-20",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "open"
+      ]
+    },
+    {
+      "key": "schedule:01a13f54-0060-7297-8b7b-b1bcc068010b:due:date:2026-12-19",
+      "sourceType": "schedule",
+      "sourceId": "01a13f54-0060-7297-8b7b-b1bcc068010b",
+      "kind": "due",
+      "state": "upcoming",
+      "locationId": "01a13f53-ef1e-7576-9471-e87ea981362a",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-f5e1-768e-81f0-2bbd4ab8850f",
+        "name": "Smoke alarm",
+        "path": "Home › Hallway",
+        "shortCode": "8DM0W2"
+      },
+      "title": "Test the smoke alarm",
+      "dueOn": "2026-12-19",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "complete",
+        "snooze",
+        "open"
+      ]
+    },
+    {
+      "key": "document:01a13f54-04b8-732a-91d0-d49667ac1d19:expiring:date:2026-12-29",
+      "sourceType": "document",
+      "sourceId": "01a13f54-04b8-732a-91d0-d49667ac1d19",
+      "kind": "expiring",
+      "state": "upcoming",
+      "locationId": "01a13f53-ef1e-7576-9471-e87ea981362a",
+      "subject": {
+        "type": "location",
+        "id": "01a13f53-ef1e-7576-9471-e87ea981362a",
+        "name": "Home",
+        "path": ""
+      },
+      "title": "Flat lease",
+      "dueOn": "2026-12-29",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "renew",
+        "open"
+      ]
+    }
+  ],
+  "counts": {
+    "overdue": 1,
+    "due": 1,
+    "expiring": 1
+  },
+  "next_cursor": null
+}

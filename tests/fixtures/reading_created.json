@@ -1,0 +1,20 @@
+{
+  "reading": {
+    "id": "01a13f5a-cc1a-75c7-970b-4dab4f3e1ae7",
+    "value": "52400",
+    "takenAt": "2026-10-15T11:37:57.000Z",
+    "source": "home_assistant",
+    "state": "accepted",
+    "reviewReason": null,
+    "loggedBy": {
+      "displayName": "Ibrahim"
+    },
+    "note": null,
+    "rowVersion": 1
+  },
+  "state": "accepted",
+  "undo": {
+    "eventId": "01a13f5a-cc20-7524-bcdc-1eede80056e4",
+    "until": "2026-10-22T11:32:57.536Z"
+  }
+}

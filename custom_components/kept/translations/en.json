@@ -1,0 +1,181 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Kept",
+        "description": "Make a personal token in Kept under Settings → Connections. Read only is enough for the sensors and the calendar; Read and change also lets the actions send readings and mark schedules done.",
+        "data": {
+          "url": "Kept address",
+          "api_token": "Personal token",
+          "verify_ssl": "Check the HTTPS certificate"
+        },
+        "data_description": {
+          "url": "The address you open Kept at, e.g. {example}",
+          "api_token": "Starts with kpt_",
+          "verify_ssl": "Turn off only for a self-signed certificate on your own network."
+        }
+      },
+      "confirm": {
+        "title": "Kept {version} at {host}",
+        "description": "The token reaches {count} location(s): {locations}. Each becomes a device with its counts and a calendar; each vehicle gets its reading and next service."
+      },
+      "reauth_confirm": {
+        "title": "New token for {host}",
+        "description": "The token was revoked or has expired. Make a new one in Kept under Settings → Connections.",
+        "data": {
+          "api_token": "Personal token"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "Enter the full address, starting with https:// or http://.",
+      "invalid_token_format": "A Kept personal token starts with kpt_.",
+      "cannot_connect": "Kept can't be reached at that address.",
+      "not_kept": "Something answered at that address, but it isn't Kept.",
+      "invalid_auth": "Kept refused the token: it was revoked, has expired or was mistyped.",
+      "kept_too_old": "This Kept doesn't offer the summary to tokens yet. Update Kept.",
+      "kept_error": "Kept said: {message}",
+      "use_https": "That address redirects to HTTPS. Use {location}",
+      "redirected": "That address redirects to {location}. Enter the address Kept is served at.",
+      "ssl_certificate": "The HTTPS certificate isn't trusted. Use a trusted certificate, or turn off the certificate check for a self-signed one.",
+      "ssl_error": "HTTPS failed at that address. If Kept is served over plain HTTP there, use http://."
+    },
+    "abort": {
+      "already_configured": "This Kept is already set up.",
+      "reauth_successful": "The new token works."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Kept options",
+        "data": {
+          "locations": "Locations",
+          "scan_minutes": "Check every"
+        },
+        "data_description": {
+          "locations": "The token's locations to show. All of them, when every one is ticked.",
+          "scan_minutes": "Minutes between reads of Kept."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "overdue": {
+        "name": "Overdue"
+      },
+      "due": {
+        "name": "Due"
+      },
+      "expiring": {
+        "name": "Expiring"
+      },
+      "lent_out": {
+        "name": "Lent out"
+      },
+      "uncertain": {
+        "name": "Uncertain"
+      },
+      "low_stock": {
+        "name": "Low stock"
+      },
+      "borrowed_in": {
+        "name": "Borrowed in"
+      },
+      "long_unseen": {
+        "name": "Long unseen"
+      },
+      "unplaced": {
+        "name": "Unplaced"
+      },
+      "things": {
+        "name": "Things"
+      },
+      "reading": {
+        "name": "Reading"
+      },
+      "next_service": {
+        "name": "Next service"
+      },
+      "next_service_at": {
+        "name": "Next service at"
+      }
+    },
+    "calendar": {
+      "agenda": {
+        "name": "Due dates"
+      }
+    }
+  },
+  "exceptions": {
+    "no_entry": {
+      "message": "No Kept is set up, or not the one named."
+    },
+    "several_entries": {
+      "message": "More than one Kept is set up: name the one to use."
+    },
+    "no_meter": {
+      "message": "That device isn't a Kept vehicle with a meter."
+    },
+    "schedule_not_found": {
+      "message": "Kept has no schedule with that id that this token can see."
+    },
+    "kept_error": {
+      "message": "Kept said: {message}"
+    },
+    "unreachable": {
+      "message": "Kept can't be reached: {error}"
+    }
+  },
+  "services": {
+    "log_reading": {
+      "name": "Log a reading",
+      "description": "Sends a meter reading to Kept, such as a car's odometer.",
+      "fields": {
+        "device_id": {
+          "name": "Vehicle",
+          "description": "The Kept vehicle whose meter it is."
+        },
+        "meter_id": {
+          "name": "Meter ID",
+          "description": "Instead of the vehicle: the meter's ID, shown on its Reading sensor."
+        },
+        "value": {
+          "name": "Value",
+          "description": "The reading, in the meter's unit. At most 3 decimals are kept."
+        },
+        "taken_at": {
+          "name": "Taken at",
+          "description": "When it was read. Now, if left out."
+        },
+        "config_entry_id": {
+          "name": "Kept",
+          "description": "Which Kept, when more than one is set up."
+        }
+      }
+    },
+    "complete_schedule": {
+      "name": "Mark a schedule done",
+      "description": "Marks a Kept schedule done and records the service.",
+      "fields": {
+        "schedule_id": {
+          "name": "Schedule ID",
+          "description": "The schedule's ID in Kept."
+        },
+        "done_on": {
+          "name": "Done on",
+          "description": "The day it was done. Today, if left out."
+        },
+        "value": {
+          "name": "Meter reading",
+          "description": "For a schedule by meter: the reading when it was done."
+        },
+        "config_entry_id": {
+          "name": "Kept",
+          "description": "Which Kept, when more than one is set up."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,624 @@
+{
+  "items": [
+    {
+      "key": "schedule:01a13f54-007c-75cb-9b4a-dc099dd416dc:overdue:date:2026-10-07",
+      "sourceType": "schedule",
+      "sourceId": "01a13f54-007c-75cb-9b4a-dc099dd416dc",
+      "kind": "overdue",
+      "state": "overdue",
+      "locationId": "01a13f53-ef1e-7576-9471-e87ea981362a",
+      "subject": {
+        "type": "place",
+        "id": "01a13f53-f2f3-76f8-9500-f3d045560d1a",
+        "name": "Living room",
+        "path": "Home",
+        "shortCode": null
+      },
+      "title": "Clean the AC filters",
+      "dueOn": "2026-10-07",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "complete",
+        "snooze",
+        "open"
+      ]
+    },
+    {
+      "key": "loan:01a13f54-002a-752d-b787-488552a39d19:overdue:date:2026-10-12",
+      "sourceType": "loan",
+      "sourceId": "01a13f54-002a-752d-b787-488552a39d19",
+      "kind": "overdue",
+      "state": "overdue",
+      "locationId": "01a13f53-ef1e-7576-9471-e87ea981362a",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-f499-7482-a12a-72ff320dbf71",
+        "name": "Catan",
+        "path": "Home › Living room",
+        "shortCode": "Z6PNAM"
+      },
+      "title": "Catan",
+      "dueOn": "2026-10-12",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "mark_returned",
+        "open"
+      ]
+    },
+    {
+      "key": "schedule:01a13f54-0048-76cc-90b7-f0d9e0ffe75b:due:date:2026-10-23",
+      "sourceType": "schedule",
+      "sourceId": "01a13f54-0048-76cc-90b7-f0d9e0ffe75b",
+      "kind": "due",
+      "state": "due",
+      "locationId": "01a13f53-ef1e-7576-9471-e87ea981362a",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-f5ca-7715-b141-f529a20a6b6d",
+        "name": "Water filter cartridge",
+        "path": "Home › Kitchen",
+        "shortCode": "Z6HVH1"
+      },
+      "title": "Replace the water filter",
+      "dueOn": "2026-10-23",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "complete",
+        "snooze",
+        "open"
+      ]
+    },
+    {
+      "key": "registration:01a13f53-ff4c-720a-a6a0-463825b1ed5d:due:date:2026-10-25",
+      "sourceType": "registration",
+      "sourceId": "01a13f53-ff4c-720a-a6a0-463825b1ed5d",
+      "kind": "due",
+      "state": "due",
+      "locationId": "01a13f53-f0ed-70d8-8fae-208718949c7d",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-faab-76ba-a3c4-49ac4bc530fa",
+        "name": "Bosch drill, 18 V",
+        "path": "Garage › Tool wall",
+        "shortCode": "2HX9RB"
+      },
+      "title": "Bosch",
+      "dueOn": "2026-10-25",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "open"
+      ]
+    },
+    {
+      "key": "schedule:01a13f54-0091-7565-8016-9755cc79f565:due:date:2026-10-27",
+      "sourceType": "schedule",
+      "sourceId": "01a13f54-0091-7565-8016-9755cc79f565",
+      "kind": "due",
+      "state": "due",
+      "locationId": "01a13f53-f15b-71b4-9eb1-a60e196516bd",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-fe35-7233-8ba2-2a9399ee248e",
+        "name": "الغلاية الكهربائية",
+        "path": "بيت العائلة › المطبخ",
+        "shortCode": "G60XBC"
+      },
+      "title": "إزالة الترسبات",
+      "dueOn": "2026-10-27",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "complete",
+        "snooze",
+        "open"
+      ]
+    },
+    {
+      "key": "thing_expiry:01a13f53-f5ca-7715-b141-f529a20a6b6d:expiring:date:2026-10-20",
+      "sourceType": "thing_expiry",
+      "sourceId": "01a13f53-f5ca-7715-b141-f529a20a6b6d",
+      "kind": "expiring",
+      "state": "expiring",
+      "locationId": "01a13f53-ef1e-7576-9471-e87ea981362a",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-f5ca-7715-b141-f529a20a6b6d",
+        "name": "Water filter cartridge",
+        "path": "Home › Kitchen",
+        "shortCode": "Z6HVH1"
+      },
+      "title": "Water filter cartridge",
+      "dueOn": "2026-10-20",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "open"
+      ]
+    },
+    {
+      "key": "document:01a13f54-04e6-7321-8a7c-952df2eddaee:expiring:date:2026-11-07",
+      "sourceType": "document",
+      "sourceId": "01a13f54-04e6-7321-8a7c-952df2eddaee",
+      "kind": "expiring",
+      "state": "expiring",
+      "locationId": "01a13f53-f0ed-70d8-8fae-208718949c7d",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-fa71-7197-9a56-872c783f5b81",
+        "name": "Toyota Corolla",
+        "path": "Garage › Bay 2",
+        "shortCode": "4VC7HD"
+      },
+      "title": "Vehicle licence",
+      "dueOn": "2026-11-07",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "renew",
+        "open"
+      ]
+    },
+    {
+      "key": "loan:01a13f54-0004-70fe-ac90-465423ae5782:overdue:date:2026-10-20",
+      "sourceType": "loan",
+      "sourceId": "01a13f54-0004-70fe-ac90-465423ae5782",
+      "kind": "overdue",
+      "state": "upcoming",
+      "locationId": "01a13f53-f0ed-70d8-8fae-208718949c7d",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-faab-76ba-a3c4-49ac4bc530fa",
+        "name": "Bosch drill, 18 V",
+        "path": "Garage › Tool wall",
+        "shortCode": "2HX9RB"
+      },
+      "title": "Bosch drill, 18 V",
+      "dueOn": "2026-10-20",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "mark_returned",
+        "open"
+      ]
+    },
+    {
+      "key": "reading_stale:01a13f53-fa76-7140-afc7-c9431233083a:due:date:2026-11-08",
+      "sourceType": "reading_stale",
+      "sourceId": "01a13f53-fa76-7140-afc7-c9431233083a",
+      "kind": "due",
+      "state": "upcoming",
+      "locationId": "01a13f53-f0ed-70d8-8fae-208718949c7d",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-fa71-7197-9a56-872c783f5b81",
+        "name": "Toyota Corolla",
+        "path": "Garage › Bay 2",
+        "shortCode": "4VC7HD"
+      },
+      "title": "",
+      "dueOn": "2026-11-08",
+      "dueValue": null,
+      "unit": "km",
+      "actions": [
+        "open"
+      ]
+    },
+    {
+      "key": "reading_stale:01a13f54-038b-777e-96f2-1e5703a3dca9:due:date:2026-11-10",
+      "sourceType": "reading_stale",
+      "sourceId": "01a13f54-038b-777e-96f2-1e5703a3dca9",
+      "kind": "due",
+      "state": "upcoming",
+      "locationId": "01a13f53-f15b-71b4-9eb1-a60e196516bd",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f54-0386-727e-a5c8-365adca34cb2",
+        "name": "هيونداي إلنترا",
+        "path": "بيت العائلة › الشُّرفة",
+        "shortCode": "ASRPKK"
+      },
+      "title": "",
+      "dueOn": "2026-11-10",
+      "dueValue": null,
+      "unit": "km",
+      "actions": [
+        "open"
+      ]
+    },
+    {
+      "key": "reading_stale:01a13f54-048b-7138-9013-8afef9b51103:due:date:2026-11-11",
+      "sourceType": "reading_stale",
+      "sourceId": "01a13f54-048b-7138-9013-8afef9b51103",
+      "kind": "due",
+      "state": "upcoming",
+      "locationId": "01a13f53-f15b-71b4-9eb1-a60e196516bd",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f54-0487-723f-89b4-8431afd4fe01",
+        "name": "مولد كهربائي",
+        "path": "بيت العائلة › الشُّرفة",
+        "shortCode": "BAHSTR"
+      },
+      "title": "",
+      "dueOn": "2026-11-11",
+      "dueValue": null,
+      "unit": "h",
+      "actions": [
+        "open"
+      ]
+    },
+    {
+      "key": "document:01a13f54-04d6-735d-bcc7-f3b87613973a:expiring:date:2026-11-24",
+      "sourceType": "document",
+      "sourceId": "01a13f54-04d6-735d-bcc7-f3b87613973a",
+      "kind": "expiring",
+      "state": "upcoming",
+      "locationId": "01a13f53-f15b-71b4-9eb1-a60e196516bd",
+      "subject": {
+        "type": "location",
+        "id": "01a13f53-f15b-71b4-9eb1-a60e196516bd",
+        "name": "بيت العائلة",
+        "path": ""
+      },
+      "title": "عقد صيانة المصعد",
+      "dueOn": "2026-11-24",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "renew",
+        "open"
+      ]
+    },
+    {
+      "key": "schedule:01a13f54-0060-7297-8b7b-b1bcc068010b:due:date:2026-12-19",
+      "sourceType": "schedule",
+      "sourceId": "01a13f54-0060-7297-8b7b-b1bcc068010b",
+      "kind": "due",
+      "state": "upcoming",
+      "locationId": "01a13f53-ef1e-7576-9471-e87ea981362a",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-f5e1-768e-81f0-2bbd4ab8850f",
+        "name": "Smoke alarm",
+        "path": "Home › Hallway",
+        "shortCode": "8DM0W2"
+      },
+      "title": "Test the smoke alarm",
+      "dueOn": "2026-12-19",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "complete",
+        "snooze",
+        "open"
+      ]
+    },
+    {
+      "key": "document:01a13f54-04b8-732a-91d0-d49667ac1d19:expiring:date:2026-12-29",
+      "sourceType": "document",
+      "sourceId": "01a13f54-04b8-732a-91d0-d49667ac1d19",
+      "kind": "expiring",
+      "state": "upcoming",
+      "locationId": "01a13f53-ef1e-7576-9471-e87ea981362a",
+      "subject": {
+        "type": "location",
+        "id": "01a13f53-ef1e-7576-9471-e87ea981362a",
+        "name": "Home",
+        "path": ""
+      },
+      "title": "Flat lease",
+      "dueOn": "2026-12-29",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "renew",
+        "open"
+      ]
+    },
+    {
+      "key": "thing_expiry:01a13f53-f66d-7406-b5c2-45ed533d8dee:expiring:date:2027-01-15",
+      "sourceType": "thing_expiry",
+      "sourceId": "01a13f53-f66d-7406-b5c2-45ed533d8dee",
+      "kind": "expiring",
+      "state": "upcoming",
+      "locationId": "01a13f53-ef1e-7576-9471-e87ea981362a",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-f66d-7406-b5c2-45ed533d8dee",
+        "name": "First aid kit",
+        "path": "Home › Bathroom",
+        "shortCode": "R6VAW8"
+      },
+      "title": "First aid kit",
+      "dueOn": "2027-01-15",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "open"
+      ]
+    },
+    {
+      "key": "warranty:01a13f53-ff6f-7705-824e-0cd8c1fbc6ef:expiring:date:2027-02-10",
+      "sourceType": "warranty",
+      "sourceId": "01a13f53-ff6f-7705-824e-0cd8c1fbc6ef",
+      "kind": "expiring",
+      "state": "upcoming",
+      "locationId": "01a13f53-f15b-71b4-9eb1-a60e196516bd",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-fd92-717a-999d-5d64937a9999",
+        "name": "ثلاجة توشيبا",
+        "path": "بيت العائلة › المطبخ",
+        "shortCode": "TKW4TZ"
+      },
+      "title": "كارفور",
+      "dueOn": "2027-02-10",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "open"
+      ]
+    },
+    {
+      "key": "thing_expiry:01a13f53-f59a-703c-9215-ea629c6cebc4:expiring:date:2027-03-01",
+      "sourceType": "thing_expiry",
+      "sourceId": "01a13f53-f59a-703c-9215-ea629c6cebc4",
+      "kind": "expiring",
+      "state": "upcoming",
+      "locationId": "01a13f53-ef1e-7576-9471-e87ea981362a",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-f59a-703c-9215-ea629c6cebc4",
+        "name": "Fire extinguisher, 2 kg",
+        "path": "Home › Kitchen",
+        "shortCode": "ZV56P8"
+      },
+      "title": "Fire extinguisher, 2 kg",
+      "dueOn": "2027-03-01",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "open"
+      ]
+    },
+    {
+      "key": "warranty:01a13f53-ff4c-720a-a6a0-463825b1ed5d:expiring:date:2027-03-13",
+      "sourceType": "warranty",
+      "sourceId": "01a13f53-ff4c-720a-a6a0-463825b1ed5d",
+      "kind": "expiring",
+      "state": "upcoming",
+      "locationId": "01a13f53-f0ed-70d8-8fae-208718949c7d",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-faab-76ba-a3c4-49ac4bc530fa",
+        "name": "Bosch drill, 18 V",
+        "path": "Garage › Tool wall",
+        "shortCode": "2HX9RB"
+      },
+      "title": "Bosch",
+      "dueOn": "2027-03-13",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "open"
+      ]
+    },
+    {
+      "key": "document:01a13f54-04c8-701e-8733-8264cc8dd182:expiring:date:2027-05-03",
+      "sourceType": "document",
+      "sourceId": "01a13f54-04c8-701e-8733-8264cc8dd182",
+      "kind": "expiring",
+      "state": "upcoming",
+      "locationId": "01a13f53-ef1e-7576-9471-e87ea981362a",
+      "subject": {
+        "type": "location",
+        "id": "01a13f53-ef1e-7576-9471-e87ea981362a",
+        "name": "Home",
+        "path": ""
+      },
+      "title": "Home contents insurance",
+      "dueOn": "2027-05-03",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "renew",
+        "open"
+      ]
+    },
+    {
+      "key": "document:01a13f54-04f7-77b2-89a7-00404ae8c82a:expiring:date:2027-05-17",
+      "sourceType": "document",
+      "sourceId": "01a13f54-04f7-77b2-89a7-00404ae8c82a",
+      "kind": "expiring",
+      "state": "upcoming",
+      "locationId": "01a13f53-f0ed-70d8-8fae-208718949c7d",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-fa71-7197-9a56-872c783f5b81",
+        "name": "Toyota Corolla",
+        "path": "Garage › Bay 2",
+        "shortCode": "4VC7HD"
+      },
+      "title": "Car insurance",
+      "dueOn": "2027-05-17",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "renew",
+        "open"
+      ]
+    },
+    {
+      "key": "schedule:01a13f54-02bc-7020-a85c-1aa555be09e7:due:date:2027-08-24",
+      "sourceType": "schedule",
+      "sourceId": "01a13f54-02bc-7020-a85c-1aa555be09e7",
+      "kind": "due",
+      "state": "upcoming",
+      "locationId": "01a13f53-f0ed-70d8-8fae-208718949c7d",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-fa71-7197-9a56-872c783f5b81",
+        "name": "Toyota Corolla",
+        "path": "Garage › Bay 2",
+        "shortCode": "4VC7HD"
+      },
+      "title": "Oil change",
+      "dueOn": "2027-08-24",
+      "dueValue": "60328",
+      "unit": "km",
+      "actions": [
+        "complete",
+        "snooze",
+        "open"
+      ]
+    },
+    {
+      "key": "warranty:01a13f53-fefa-733f-894c-bde57f236b81:expiring:date:2027-09-09",
+      "sourceType": "warranty",
+      "sourceId": "01a13f53-fefa-733f-894c-bde57f236b81",
+      "kind": "expiring",
+      "state": "upcoming",
+      "locationId": "01a13f53-ef1e-7576-9471-e87ea981362a",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-f3d7-70c0-86d3-65040287779a",
+        "name": "Samsung TV, 55″",
+        "path": "Home › Living room › TV unit",
+        "shortCode": "5MT0QD"
+      },
+      "title": "Samsung",
+      "dueOn": "2027-09-09",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "open"
+      ]
+    },
+    {
+      "key": "schedule:01a13f54-02c5-737b-9351-543607d1860c:due:date:2027-10-15",
+      "sourceType": "schedule",
+      "sourceId": "01a13f54-02c5-737b-9351-543607d1860c",
+      "kind": "due",
+      "state": "upcoming",
+      "locationId": "01a13f53-f0ed-70d8-8fae-208718949c7d",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-fa71-7197-9a56-872c783f5b81",
+        "name": "Toyota Corolla",
+        "path": "Garage › Bay 2",
+        "shortCode": "4VC7HD"
+      },
+      "title": "Tyre rotation",
+      "dueOn": "2027-10-15",
+      "dueValue": "62340",
+      "unit": "km",
+      "actions": [
+        "complete",
+        "snooze",
+        "open"
+      ]
+    },
+    {
+      "key": "warranty:01a13f53-ff18-730f-b730-4f126bac5f68:expiring:date:2028-06-01",
+      "sourceType": "warranty",
+      "sourceId": "01a13f53-ff18-730f-b730-4f126bac5f68",
+      "kind": "expiring",
+      "state": "upcoming",
+      "locationId": "01a13f53-ef1e-7576-9471-e87ea981362a",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-f401-7451-adae-4a593f0c0f97",
+        "name": "Wi-Fi router",
+        "path": "Home › Living room › TV unit",
+        "shortCode": "9RT2FK"
+      },
+      "title": "TP-Link",
+      "dueOn": "2028-06-01",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "open"
+      ]
+    },
+    {
+      "key": "schedule:01a13f54-02cd-7360-a297-c6da9c11682a:due:date:2028-10-15",
+      "sourceType": "schedule",
+      "sourceId": "01a13f54-02cd-7360-a297-c6da9c11682a",
+      "kind": "due",
+      "state": "upcoming",
+      "locationId": "01a13f53-f0ed-70d8-8fae-208718949c7d",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-fa71-7197-9a56-872c783f5b81",
+        "name": "Toyota Corolla",
+        "path": "Garage › Bay 2",
+        "shortCode": "4VC7HD"
+      },
+      "title": "Brake fluid",
+      "dueOn": "2028-10-15",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "complete",
+        "snooze",
+        "open"
+      ]
+    },
+    {
+      "key": "schedule:01a13f54-02d4-741e-b220-35f746265a48:due:date:2028-10-15",
+      "sourceType": "schedule",
+      "sourceId": "01a13f54-02d4-741e-b220-35f746265a48",
+      "kind": "due",
+      "state": "upcoming",
+      "locationId": "01a13f53-f0ed-70d8-8fae-208718949c7d",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-fa71-7197-9a56-872c783f5b81",
+        "name": "Toyota Corolla",
+        "path": "Garage › Bay 2",
+        "shortCode": "4VC7HD"
+      },
+      "title": "Air filter",
+      "dueOn": "2028-10-15",
+      "dueValue": "72340",
+      "unit": "km",
+      "actions": [
+        "complete",
+        "snooze",
+        "open"
+      ]
+    },
+    {
+      "key": "thing_expiry:01a13f53-f5e1-768e-81f0-2bbd4ab8850f:expiring:date:2031-05-01",
+      "sourceType": "thing_expiry",
+      "sourceId": "01a13f53-f5e1-768e-81f0-2bbd4ab8850f",
+      "kind": "expiring",
+      "state": "upcoming",
+      "locationId": "01a13f53-ef1e-7576-9471-e87ea981362a",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-f5e1-768e-81f0-2bbd4ab8850f",
+        "name": "Smoke alarm",
+        "path": "Home › Hallway",
+        "shortCode": "8DM0W2"
+      },
+      "title": "Smoke alarm",
+      "dueOn": "2031-05-01",
+      "dueValue": null,
+      "unit": null,
+      "actions": [
+        "open"
+      ]
+    }
+  ],
+  "counts": {
+    "overdue": 2,
+    "due": 3,
+    "expiring": 2
+  },
+  "next_cursor": null
+}

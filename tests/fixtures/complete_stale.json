@@ -1,0 +1,12 @@
+{
+  "conflicts": [
+    "complete"
+  ],
+  "row_version": 1,
+  "changedBy": {
+    "displayName": "Bruce"
+  },
+  "error": "This changed since you opened it.",
+  "code": "precondition_failed",
+  "hint": "Reload to see the latest version."
+}

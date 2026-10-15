@@ -1,0 +1,5 @@
+{
+  "error": "This token was revoked or has expired.",
+  "code": "token_revoked",
+  "hint": "create a new token in Settings → Connections"
+}

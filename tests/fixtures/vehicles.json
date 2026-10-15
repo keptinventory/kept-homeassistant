@@ -1,0 +1,207 @@
+{
+  "items": [
+    {
+      "thing": {
+        "id": "01a13f53-f69b-7306-968a-b7bf893e8ff2",
+        "locationId": "01a13f53-ef1e-7576-9471-e87ea981362a",
+        "shortCode": "SZR4J2",
+        "name": "City bike",
+        "type": {
+          "id": "01a13f53-dfc9-7100-99ea-d5ce4c3e914a",
+          "icon": "lucide:bike",
+          "name": null,
+          "builtinKey": "bicycle"
+        },
+        "quantity": 1,
+        "lifecycle": "in_use",
+        "derivedState": [],
+        "path": [
+          {
+            "id": "01a13f53-f39c-740f-87fd-1d4110ba3cbc",
+            "name": "Balcony",
+            "kind": "place",
+            "isUnplaced": false,
+            "shortCode": null
+          }
+        ],
+        "containerThumbUrl": null,
+        "thumbUrl": null,
+        "lastSeenAt": "2026-10-15T11:30:29.654Z",
+        "isContainer": true
+      },
+      "documentsDue": []
+    },
+    {
+      "thing": {
+        "id": "01a13f53-fa71-7197-9a56-872c783f5b81",
+        "locationId": "01a13f53-f0ed-70d8-8fae-208718949c7d",
+        "shortCode": "4VC7HD",
+        "name": "Toyota Corolla",
+        "type": {
+          "id": "01a13f53-dfc9-7039-ba82-946bd4c755f9",
+          "icon": "lucide:car",
+          "name": null,
+          "builtinKey": "car"
+        },
+        "quantity": 1,
+        "lifecycle": "in_use",
+        "derivedState": [],
+        "path": [
+          {
+            "id": "01a13f53-fa5d-7155-b986-5a5a12bc69bd",
+            "name": "Bay 2",
+            "kind": "place",
+            "isUnplaced": false,
+            "shortCode": null
+          }
+        ],
+        "containerThumbUrl": null,
+        "thumbUrl": null,
+        "lastSeenAt": "2026-10-15T11:30:30.635Z",
+        "isContainer": true
+      },
+      "meter": {
+        "id": "01a13f53-fa76-7140-afc7-c9431233083a",
+        "unit": "km",
+        "latest": {
+          "value": "52340",
+          "takenAt": "2026-10-09T11:30:26.104Z",
+          "source": "manual",
+          "by": {
+            "displayName": "Alfred"
+          }
+        },
+        "estimate": {
+          "perDay": "56.512821",
+          "basisDays": 83,
+          "ageDays": 6,
+          "advice": "fresh"
+        }
+      },
+      "nextDue": {
+        "name": "Oil change",
+        "dueOn": "2027-02-10",
+        "dueValue": "60328",
+        "estimated": true,
+        "state": "upcoming"
+      },
+      "documentsDue": [
+        {
+          "id": "01a13f54-04e6-7321-8a7c-952df2eddaee",
+          "kind": "licence",
+          "expiresOn": "2026-11-07",
+          "state": "expiring"
+        }
+      ],
+      "fuel": {
+        "perHundred": "7.3",
+        "unit": "L",
+        "distanceUnit": "km"
+      }
+    },
+    {
+      "thing": {
+        "id": "01a13f54-0487-723f-89b4-8431afd4fe01",
+        "locationId": "01a13f53-f15b-71b4-9eb1-a60e196516bd",
+        "shortCode": "BAHSTR",
+        "name": "مولد كهربائي",
+        "type": {
+          "id": "01a13f53-dfc9-7166-8b9c-9b69b9085c05",
+          "icon": "tabler:engine",
+          "name": null,
+          "builtinKey": "generator"
+        },
+        "quantity": 1,
+        "lifecycle": "in_use",
+        "derivedState": [],
+        "path": [
+          {
+            "id": "01a13f53-fd37-76f1-8158-491657e4c27d",
+            "name": "الشُّرفة",
+            "kind": "place",
+            "isUnplaced": false,
+            "shortCode": null
+          }
+        ],
+        "containerThumbUrl": null,
+        "thumbUrl": null,
+        "lastSeenAt": "2026-10-15T11:30:33.216Z",
+        "isContainer": true
+      },
+      "meter": {
+        "id": "01a13f54-048b-7138-9013-8afef9b51103",
+        "unit": "h",
+        "latest": {
+          "value": "134.5",
+          "takenAt": "2026-10-12T07:30:00.000Z",
+          "source": "manual",
+          "by": {
+            "displayName": "Alfred"
+          }
+        },
+        "estimate": {
+          "perDay": "0.537037",
+          "basisDays": 27,
+          "ageDays": 3,
+          "advice": "fresh"
+        }
+      },
+      "documentsDue": []
+    },
+    {
+      "thing": {
+        "id": "01a13f54-0386-727e-a5c8-365adca34cb2",
+        "locationId": "01a13f53-f15b-71b4-9eb1-a60e196516bd",
+        "shortCode": "ASRPKK",
+        "name": "هيونداي إلنترا",
+        "type": {
+          "id": "01a13f53-dfc9-7039-ba82-946bd4c755f9",
+          "icon": "lucide:car",
+          "name": null,
+          "builtinKey": "car"
+        },
+        "quantity": 1,
+        "lifecycle": "in_use",
+        "derivedState": [],
+        "path": [
+          {
+            "id": "01a13f53-fd37-76f1-8158-491657e4c27d",
+            "name": "الشُّرفة",
+            "kind": "place",
+            "isUnplaced": false,
+            "shortCode": null
+          }
+        ],
+        "containerThumbUrl": null,
+        "thumbUrl": null,
+        "lastSeenAt": "2026-10-15T11:30:32.959Z",
+        "isContainer": true
+      },
+      "meter": {
+        "id": "01a13f54-038b-777e-96f2-1e5703a3dca9",
+        "unit": "km",
+        "latest": {
+          "value": "92150",
+          "takenAt": "2026-10-11T07:30:00.000Z",
+          "source": "fuel",
+          "by": {
+            "displayName": "Alfred"
+          }
+        },
+        "estimate": {
+          "perDay": "37.702381",
+          "basisDays": 84,
+          "ageDays": 4,
+          "advice": "fresh"
+        }
+      },
+      "documentsDue": [],
+      "fuel": {
+        "perHundred": "8.1",
+        "unit": "L",
+        "distanceUnit": "km"
+      }
+    }
+  ],
+  "next_cursor": null
+}

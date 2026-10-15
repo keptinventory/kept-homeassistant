@@ -1,0 +1,10 @@
+{
+  "reason": "lower_than_previous",
+  "previous": {
+    "value": "52400",
+    "takenAt": "2026-10-15T11:37:57.000Z"
+  },
+  "error": "That conflicts with the current state.",
+  "code": "conflict",
+  "hint": "Lower than the reading before it (52400 km). Check the value, or record that the meter was replaced first."
+}

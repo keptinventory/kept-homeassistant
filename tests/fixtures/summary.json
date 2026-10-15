@@ -1,0 +1,89 @@
+{
+  "asOf": "2026-10-15T11:31:04.565Z",
+  "totals": {
+    "things": 61,
+    "unplaced": 4,
+    "overdue": 2,
+    "due": 3,
+    "expiring": 2,
+    "lentOut": 2,
+    "borrowedIn": 0,
+    "uncertain": 2,
+    "longUnseen": 0,
+    "lowStock": 0
+  },
+  "locations": [
+    {
+      "id": "01a13f53-e998-7097-b3b8-b5c5639460a8",
+      "name": "Personal",
+      "kind": "personal",
+      "timeZone": "Africa/Cairo",
+      "counts": {
+        "things": 2,
+        "unplaced": 2,
+        "overdue": 0,
+        "due": 0,
+        "expiring": 0,
+        "lentOut": 0,
+        "borrowedIn": 0,
+        "uncertain": 0,
+        "longUnseen": 0,
+        "lowStock": null
+      }
+    },
+    {
+      "id": "01a13f53-f0ed-70d8-8fae-208718949c7d",
+      "name": "Garage",
+      "kind": "garage",
+      "timeZone": "Africa/Cairo",
+      "counts": {
+        "things": 12,
+        "unplaced": 0,
+        "overdue": 0,
+        "due": 1,
+        "expiring": 1,
+        "lentOut": 1,
+        "borrowedIn": 0,
+        "uncertain": 1,
+        "longUnseen": 0,
+        "lowStock": null
+      }
+    },
+    {
+      "id": "01a13f53-ef1e-7576-9471-e87ea981362a",
+      "name": "Home",
+      "kind": "home",
+      "timeZone": "Africa/Cairo",
+      "counts": {
+        "things": 34,
+        "unplaced": 1,
+        "overdue": 2,
+        "due": 1,
+        "expiring": 1,
+        "lentOut": 1,
+        "borrowedIn": 0,
+        "uncertain": 1,
+        "longUnseen": 0,
+        "lowStock": null
+      }
+    },
+    {
+      "id": "01a13f53-f15b-71b4-9eb1-a60e196516bd",
+      "name": "بيت العائلة",
+      "kind": "home",
+      "timeZone": "Africa/Cairo",
+      "counts": {
+        "things": 13,
+        "unplaced": 1,
+        "overdue": 0,
+        "due": 1,
+        "expiring": 0,
+        "lentOut": 0,
+        "borrowedIn": 0,
+        "uncertain": 0,
+        "longUnseen": 0,
+        "lowStock": null
+      }
+    }
+  ]
+}

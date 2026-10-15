@@ -1,0 +1,48 @@
+log_reading:
+  fields:
+    device_id:
+      selector:
+        device:
+          integration: kept
+    meter_id:
+      example: "01a13f53-fa76-7140-afc7-c9431233083a"
+      selector:
+        text:
+    value:
+      required: true
+      example: 52340
+      selector:
+        number:
+          min: 0
+          max: 99999999999
+          step: any
+          mode: box
+    taken_at:
+      selector:
+        datetime:
+    config_entry_id:
+      selector:
+        config_entry:
+          integration: kept
+complete_schedule:
+  fields:
+    schedule_id:
+      required: true
+      example: "01a13f54-007c-75cb-9b4a-dc099dd416dc"
+      selector:
+        text:
+    done_on:
+      selector:
+        date:
+    value:
+      example: 52340
+      selector:
+        number:
+          min: 0
+          max: 99999999999
+          step: any
+          mode: box
+    config_entry_id:
+      selector:
+        config_entry:
+          integration: kept

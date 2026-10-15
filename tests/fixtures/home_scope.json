@@ -1,0 +1,5 @@
+{
+  "error": "This token can't do that.",
+  "code": "token_scope",
+  "hint": "This route is not open to tokens; do this in Kept."
+}

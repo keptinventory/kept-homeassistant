@@ -1,0 +1,280 @@
+{
+  "items": [
+    {
+      "id": "01a13f54-007c-75cb-9b4a-dc099dd416dc",
+      "locationId": "01a13f53-ef1e-7576-9471-e87ea981362a",
+      "subject": {
+        "type": "place",
+        "id": "01a13f53-f2f3-76f8-9500-f3d045560d1a",
+        "name": "Living room",
+        "path": "Home",
+        "shortCode": null
+      },
+      "name": "Clean the AC filters",
+      "everyMonths": 3,
+      "everyUnits": null,
+      "meter": null,
+      "dueOn": null,
+      "leadDays": 14,
+      "leadUnits": null,
+      "anchorOn": "2026-07-07",
+      "anchorValue": null,
+      "next": {
+        "dueOn": "2026-10-07",
+        "dueValue": null,
+        "state": "overdue",
+        "basis": "months"
+      },
+      "snoozedUntil": null,
+      "snoozedUntilValue": null,
+      "skipNext": false,
+      "active": true,
+      "lastService": null,
+      "rowVersion": 1
+    },
+    {
+      "id": "01a13f54-0048-76cc-90b7-f0d9e0ffe75b",
+      "locationId": "01a13f53-ef1e-7576-9471-e87ea981362a",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-f5ca-7715-b141-f529a20a6b6d",
+        "name": "Water filter cartridge",
+        "path": "Home › Kitchen",
+        "shortCode": "Z6HVH1"
+      },
+      "name": "Replace the water filter",
+      "everyMonths": 6,
+      "everyUnits": null,
+      "meter": null,
+      "dueOn": null,
+      "leadDays": 14,
+      "leadUnits": null,
+      "anchorOn": "2026-04-23",
+      "anchorValue": null,
+      "next": {
+        "dueOn": "2026-10-23",
+        "dueValue": null,
+        "state": "due",
+        "basis": "months"
+      },
+      "snoozedUntil": null,
+      "snoozedUntilValue": null,
+      "skipNext": false,
+      "active": true,
+      "lastService": null,
+      "rowVersion": 1
+    },
+    {
+      "id": "01a13f54-0091-7565-8016-9755cc79f565",
+      "locationId": "01a13f53-f15b-71b4-9eb1-a60e196516bd",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-fe35-7233-8ba2-2a9399ee248e",
+        "name": "الغلاية الكهربائية",
+        "path": "بيت العائلة › المطبخ",
+        "shortCode": "G60XBC"
+      },
+      "name": "إزالة الترسبات",
+      "everyMonths": 3,
+      "everyUnits": null,
+      "meter": null,
+      "dueOn": null,
+      "leadDays": 14,
+      "leadUnits": null,
+      "anchorOn": "2026-07-27",
+      "anchorValue": null,
+      "next": {
+        "dueOn": "2026-10-27",
+        "dueValue": null,
+        "state": "due",
+        "basis": "months"
+      },
+      "snoozedUntil": null,
+      "snoozedUntilValue": null,
+      "skipNext": false,
+      "active": true,
+      "lastService": null,
+      "rowVersion": 1
+    },
+    {
+      "id": "01a13f54-0060-7297-8b7b-b1bcc068010b",
+      "locationId": "01a13f53-ef1e-7576-9471-e87ea981362a",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-f5e1-768e-81f0-2bbd4ab8850f",
+        "name": "Smoke alarm",
+        "path": "Home › Hallway",
+        "shortCode": "8DM0W2"
+      },
+      "name": "Test the smoke alarm",
+      "everyMonths": 12,
+      "everyUnits": null,
+      "meter": null,
+      "dueOn": null,
+      "leadDays": 14,
+      "leadUnits": null,
+      "anchorOn": "2025-12-19",
+      "anchorValue": null,
+      "next": {
+        "dueOn": "2026-12-19",
+        "dueValue": null,
+        "state": "upcoming",
+        "basis": "months"
+      },
+      "snoozedUntil": null,
+      "snoozedUntilValue": null,
+      "skipNext": false,
+      "active": true,
+      "lastService": null,
+      "rowVersion": 1
+    },
+    {
+      "id": "01a13f54-02bc-7020-a85c-1aa555be09e7",
+      "locationId": "01a13f53-f0ed-70d8-8fae-208718949c7d",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-fa71-7197-9a56-872c783f5b81",
+        "name": "Toyota Corolla",
+        "path": "Garage › Bay 2",
+        "shortCode": "4VC7HD"
+      },
+      "name": "Oil change",
+      "everyMonths": 12,
+      "everyUnits": "10000",
+      "meter": {
+        "id": "01a13f53-fa76-7140-afc7-c9431233083a",
+        "label": "distance",
+        "unit": "km"
+      },
+      "dueOn": null,
+      "leadDays": 14,
+      "leadUnits": null,
+      "anchorOn": "2026-08-24",
+      "anchorValue": "50328",
+      "next": {
+        "dueOn": "2027-08-24",
+        "dueValue": "60328",
+        "state": "upcoming",
+        "basis": "both"
+      },
+      "snoozedUntil": null,
+      "snoozedUntilValue": null,
+      "skipNext": false,
+      "active": true,
+      "lastService": {
+        "id": "01a13f54-02ee-7491-bfa8-31d13262300c",
+        "servicedOn": "2026-08-24"
+      },
+      "rowVersion": 1
+    },
+    {
+      "id": "01a13f54-02c5-737b-9351-543607d1860c",
+      "locationId": "01a13f53-f0ed-70d8-8fae-208718949c7d",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-fa71-7197-9a56-872c783f5b81",
+        "name": "Toyota Corolla",
+        "path": "Garage › Bay 2",
+        "shortCode": "4VC7HD"
+      },
+      "name": "Tyre rotation",
+      "everyMonths": 12,
+      "everyUnits": "10000",
+      "meter": {
+        "id": "01a13f53-fa76-7140-afc7-c9431233083a",
+        "label": "distance",
+        "unit": "km"
+      },
+      "dueOn": null,
+      "leadDays": 14,
+      "leadUnits": null,
+      "anchorOn": "2026-10-15",
+      "anchorValue": "52340",
+      "next": {
+        "dueOn": "2027-10-15",
+        "dueValue": "62340",
+        "state": "upcoming",
+        "basis": "both"
+      },
+      "snoozedUntil": null,
+      "snoozedUntilValue": null,
+      "skipNext": false,
+      "active": true,
+      "lastService": null,
+      "rowVersion": 1
+    },
+    {
+      "id": "01a13f54-02cd-7360-a297-c6da9c11682a",
+      "locationId": "01a13f53-f0ed-70d8-8fae-208718949c7d",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-fa71-7197-9a56-872c783f5b81",
+        "name": "Toyota Corolla",
+        "path": "Garage › Bay 2",
+        "shortCode": "4VC7HD"
+      },
+      "name": "Brake fluid",
+      "everyMonths": 24,
+      "everyUnits": null,
+      "meter": null,
+      "dueOn": null,
+      "leadDays": 14,
+      "leadUnits": null,
+      "anchorOn": "2026-10-15",
+      "anchorValue": null,
+      "next": {
+        "dueOn": "2028-10-15",
+        "dueValue": null,
+        "state": "upcoming",
+        "basis": "months"
+      },
+      "snoozedUntil": null,
+      "snoozedUntilValue": null,
+      "skipNext": false,
+      "active": true,
+      "lastService": null,
+      "rowVersion": 1
+    },
+    {
+      "id": "01a13f54-02d4-741e-b220-35f746265a48",
+      "locationId": "01a13f53-f0ed-70d8-8fae-208718949c7d",
+      "subject": {
+        "type": "thing",
+        "id": "01a13f53-fa71-7197-9a56-872c783f5b81",
+        "name": "Toyota Corolla",
+        "path": "Garage › Bay 2",
+        "shortCode": "4VC7HD"
+      },
+      "name": "Air filter",
+      "everyMonths": 24,
+      "everyUnits": "20000",
+      "meter": {
+        "id": "01a13f53-fa76-7140-afc7-c9431233083a",
+        "label": "distance",
+        "unit": "km"
+      },
+      "dueOn": null,
+      "leadDays": 14,
+      "leadUnits": null,
+      "anchorOn": "2026-10-15",
+      "anchorValue": "52340",
+      "next": {
+        "dueOn": "2028-10-15",
+        "dueValue": "72340",
+        "state": "upcoming",
+        "basis": "both"
+      },
+      "snoozedUntil": null,
+      "snoozedUntilValue": null,
+      "skipNext": false,
+      "active": true,
+      "lastService": null,
+      "rowVersion": 1
+    }
+  ],
+  "counts": {
+    "due": 2,
+    "overdue": 1
+  },
+  "next_cursor": null
+}

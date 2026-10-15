@@ -1,0 +1,5 @@
+{
+  "error": "This token can't do that.",
+  "code": "token_scope",
+  "hint": "use a token with write access, or do this in Kept"
+}

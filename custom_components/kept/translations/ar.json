@@ -1,0 +1,181 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "الاتصال بـ Kept",
+        "description": "أنشئ رمزًا شخصيًا في Kept من الإعدادات ← الاتصالات. القراءة فقط تكفي للمستشعرات والتقويم؛ أما القراءة والتعديل فتسمح للإجراءات أيضًا بإرسال القراءات وإنهاء الجداول.",
+        "data": {
+          "url": "عنوان Kept",
+          "api_token": "الرمز الشخصي",
+          "verify_ssl": "التحقق من شهادة HTTPS"
+        },
+        "data_description": {
+          "url": "العنوان الذي تفتح به Kept، مثل {example}",
+          "api_token": "يبدأ بـ kpt_",
+          "verify_ssl": "أوقفه فقط لشهادة موقّعة ذاتيًا على شبكتك."
+        }
+      },
+      "confirm": {
+        "title": "Kept {version} على {host}",
+        "description": "يصل الرمز إلى {count} موقع: {locations}. يصبح كل موقع جهازًا بأعداده وتقويمه، ولكل مركبة قراءتها وموعد صيانتها التالية."
+      },
+      "reauth_confirm": {
+        "title": "رمز جديد لـ {host}",
+        "description": "أُلغي الرمز أو انتهت صلاحيته. أنشئ رمزًا جديدًا في Kept من الإعدادات ← الاتصالات.",
+        "data": {
+          "api_token": "الرمز الشخصي"
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "أدخل العنوان كاملًا، بدءًا بـ https://‎ أو http://‎.",
+      "invalid_token_format": "الرمز الشخصي في Kept يبدأ بـ kpt_.",
+      "cannot_connect": "تعذّر الوصول إلى Kept على هذا العنوان.",
+      "not_kept": "شيء ما أجاب على هذا العنوان، لكنه ليس Kept.",
+      "invalid_auth": "رفض Kept الرمز: أُلغي أو انتهت صلاحيته أو كُتب خطأً.",
+      "kept_too_old": "نسخة Kept هذه لا تتيح الملخص للرموز بعد. حدّث Kept.",
+      "kept_error": "قال Kept: {message}",
+      "use_https": "هذا العنوان يحوّل إلى HTTPS. استخدم {location}",
+      "redirected": "هذا العنوان يحوّل إلى {location}. أدخل العنوان الذي يعمل عليه Kept.",
+      "ssl_certificate": "شهادة HTTPS غير موثوقة. استخدم شهادة موثوقة، أو أوقف التحقق من الشهادة إن كانت موقّعة ذاتيًا.",
+      "ssl_error": "فشل HTTPS على هذا العنوان. إن كان Kept يعمل هناك عبر HTTP العادي، فاستخدم http://‎."
+    },
+    "abort": {
+      "already_configured": "Kept هذا مُعدّ بالفعل.",
+      "reauth_successful": "الرمز الجديد يعمل."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "خيارات Kept",
+        "data": {
+          "locations": "المواقع",
+          "scan_minutes": "افحص كل"
+        },
+        "data_description": {
+          "locations": "مواقع الرمز التي تُعرض. كلها، إن حُدِّد كل واحد منها.",
+          "scan_minutes": "الدقائق بين كل قراءة لـ Kept."
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "overdue": {
+        "name": "متأخر"
+      },
+      "due": {
+        "name": "مستحق"
+      },
+      "expiring": {
+        "name": "ينتهي قريبًا"
+      },
+      "lent_out": {
+        "name": "معار"
+      },
+      "uncertain": {
+        "name": "مكانه غير مؤكد"
+      },
+      "low_stock": {
+        "name": "مخزون منخفض"
+      },
+      "borrowed_in": {
+        "name": "مستعار"
+      },
+      "long_unseen": {
+        "name": "لم يُرَ منذ مدة"
+      },
+      "unplaced": {
+        "name": "بلا مكان"
+      },
+      "things": {
+        "name": "الأشياء"
+      },
+      "reading": {
+        "name": "القراءة"
+      },
+      "next_service": {
+        "name": "الصيانة التالية"
+      },
+      "next_service_at": {
+        "name": "الصيانة التالية عند"
+      }
+    },
+    "calendar": {
+      "agenda": {
+        "name": "المواعيد"
+      }
+    }
+  },
+  "exceptions": {
+    "no_entry": {
+      "message": "لا يوجد Kept مُعدّ، أو ليس الذي ذُكر."
+    },
+    "several_entries": {
+      "message": "أكثر من Kept مُعدّ: اذكر أيها تقصد."
+    },
+    "no_meter": {
+      "message": "هذا الجهاز ليس مركبة في Kept لها عدّاد."
+    },
+    "schedule_not_found": {
+      "message": "لا جدول في Kept بهذا المعرّف يراه هذا الرمز."
+    },
+    "kept_error": {
+      "message": "قال Kept: {message}"
+    },
+    "unreachable": {
+      "message": "تعذّر الوصول إلى Kept: {error}"
+    }
+  },
+  "services": {
+    "log_reading": {
+      "name": "تسجيل قراءة",
+      "description": "يرسل قراءة عدّاد إلى Kept، مثل عدّاد مسافة السيارة.",
+      "fields": {
+        "device_id": {
+          "name": "المركبة",
+          "description": "مركبة Kept صاحبة العدّاد."
+        },
+        "meter_id": {
+          "name": "معرّف العدّاد",
+          "description": "بدل المركبة: معرّف العدّاد، الظاهر في مستشعر القراءة."
+        },
+        "value": {
+          "name": "القيمة",
+          "description": "القراءة بوحدة العدّاد. تُحفظ 3 خانات عشرية على الأكثر."
+        },
+        "taken_at": {
+          "name": "وقت القراءة",
+          "description": "متى قُرئت. الآن، إن تُرك فارغًا."
+        },
+        "config_entry_id": {
+          "name": "Kept",
+          "description": "أي Kept، إن كان هناك أكثر من واحد."
+        }
+      }
+    },
+    "complete_schedule": {
+      "name": "إنهاء جدول",
+      "description": "يُعلِّم جدولًا في Kept منتهيًا ويسجّل الصيانة.",
+      "fields": {
+        "schedule_id": {
+          "name": "معرّف الجدول",
+          "description": "معرّف الجدول في Kept."
+        },
+        "done_on": {
+          "name": "تاريخ الإنجاز",
+          "description": "يوم الإنجاز. اليوم، إن تُرك فارغًا."
+        },
+        "value": {
+          "name": "قراءة العدّاد",
+          "description": "لجدول حسب العدّاد: القراءة عند الإنجاز."
+        },
+        "config_entry_id": {
+          "name": "Kept",
+          "description": "أي Kept، إن كان هناك أكثر من واحد."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "entity": {
+    "sensor": {
+      "overdue": { "default": "mdi:calendar-alert" },
+      "due": { "default": "mdi:calendar-clock" },
+      "expiring": { "default": "mdi:timer-sand" },
+      "lent_out": { "default": "mdi:hand-extended" },
+      "uncertain": { "default": "mdi:map-marker-question" },
+      "low_stock": { "default": "mdi:package-down" },
+      "borrowed_in": { "default": "mdi:hand-coin" },
+      "long_unseen": { "default": "mdi:eye-off" },
+      "unplaced": { "default": "mdi:package-variant" },
+      "things": { "default": "mdi:package-variant-closed" },
+      "reading": { "default": "mdi:counter" },
+      "next_service": { "default": "mdi:wrench-clock" },
+      "next_service_at": { "default": "mdi:wrench-clock" }
+    },
+    "calendar": {
+      "agenda": { "default": "mdi:calendar-check" }
+    }
+  },
+  "services": {
+    "log_reading": { "service": "mdi:counter" },
+    "complete_schedule": { "service": "mdi:check-circle" }
+  }
+}
