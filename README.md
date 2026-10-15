@@ -1,6 +1,6 @@
 # Kept for Home Assistant
 
-[Kept](https://github.com/ibrahimroshdy/kept) in Home Assistant: what needs you, each vehicle's
+[Kept](https://github.com/keptinventory/kept) in Home Assistant: what needs you, each vehicle's
 next service, and readings sent back from Home Assistant.
 
 A custom integration, installed with HACS. Licence: Apache-2.0, the same as Home Assistant core.
