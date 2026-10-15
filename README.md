@@ -55,6 +55,8 @@ Both return a response (`response_variable` in a script) and need a token that c
 
 ## Install
 
+Needs [HACS](https://hacs.xyz/docs/use/download/download/) in Home Assistant, Kept 1.8.0 or later served over `https`, and Home Assistant able to reach Kept. Full guide: [keptinventory.info/users/home-assistant](https://keptinventory.info/users/home-assistant/).
+
 1. HACS → ⋮ → **Custom repositories**: add `https://github.com/keptinventory/kept-homeassistant`, type **Integration**.
 2. Install **Kept**, restart Home Assistant.
 3. **Settings → Devices & services → Add integration → Kept**.
