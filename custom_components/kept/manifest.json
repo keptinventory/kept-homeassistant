@@ -6,7 +6,7 @@
   "documentation": "https://keptinventory.info/users/home-assistant/",
   "integration_type": "hub",
   "iot_class": "local_polling",
-  "issue_tracker": "https://github.com/ibrahimroshdy/kept/issues",
+  "issue_tracker": "https://github.com/keptinventory/kept-homeassistant/issues",
   "requirements": [],
   "version": "0.1.0"
 }

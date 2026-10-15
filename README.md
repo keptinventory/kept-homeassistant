@@ -55,11 +55,11 @@ Both return a response (`response_variable` in a script) and need a token that c
 
 ## Install
 
-1. HACS → ⋮ → **Custom repositories**: add this repository's URL, type **Integration**.
+1. HACS → ⋮ → **Custom repositories**: add `https://github.com/keptinventory/kept-homeassistant`, type **Integration**.
 2. Install **Kept**, restart Home Assistant.
 3. **Settings → Devices & services → Add integration → Kept**.
 
-Needs Home Assistant 2026.10 or later, and a Kept with `GET /api/v1/summary` (Kept 1.x, D244).
+Needs Home Assistant 2026.10 or later, and Kept 1.8.0 or later (it adds `GET /api/v1/summary`).
 
 ## Set up
 
