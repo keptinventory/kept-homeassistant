@@ -51,6 +51,6 @@
 <rect x="273.0" y="124" width="104" height="24" rx="12" fill="#1E1C19" stroke="#34302A"/><text x="325" y="140.5" font-family="'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="500" fill="#BDB7AC" text-anchor="middle">every 5 min</text>
 <path d="M390 226H264" stroke="#9A948A" stroke-width="1.75" fill="none" marker-end="url(#adark)"/>
 <rect x="267.0" y="238" width="116" height="24" rx="12" fill="#1E1C19" stroke="#34302A"/><text x="325" y="254.5" font-family="'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="500" fill="#BDB7AC" text-anchor="middle">readings back</text>
-<text x="24" y="302" font-family="'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="500" fill="#9A948A" text-anchor="start">Token: read-only for the sensors,</text>
-<text x="24" y="320" font-family="'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="500" fill="#9A948A" text-anchor="start">read + change for the actions</text>
+<text x="24" y="312" font-family="'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="500" fill="#9A948A" text-anchor="start">Token: read-only for the sensors,</text>
+<text x="24" y="329" font-family="'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="500" fill="#9A948A" text-anchor="start">read + change for the actions</text>
 </svg>

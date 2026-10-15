@@ -60,7 +60,7 @@ def svg(t):
   # Kept ⇄ integration
   p += [line(262, 160, 388, 160), pill(325, 136, 'every 5 min', 104),
         line(390, 226, 264, 226), pill(325, 250, 'readings back', 116)]
-  p += [tx(24, 302, 'Token: read-only for the sensors,', 12, 500, c['ink3'], MONO), tx(24, 320, 'read + change for the actions', 12, 500, c['ink3'], MONO)]
+  p += [tx(24, 312, 'Token: read-only for the sensors,', 12, 500, c['ink3'], MONO), tx(24, 329, 'read + change for the actions', 12, 500, c['ink3'], MONO)]
   p.append('</svg>')
   return '\n'.join(p)
 
