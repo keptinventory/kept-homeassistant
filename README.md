@@ -7,6 +7,17 @@ next service, and readings sent back from Home Assistant.
 
 A custom integration, installed with HACS. Licence: Apache-2.0, the same as Home Assistant core.
 
+## Where it sits
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/where-it-sits-dark.svg">
+  <img src="docs/where-it-sits-light.svg" alt="Kept on your server; the Kept integration inside Home Assistant reads it every 5 minutes and sends readings back; it feeds dashboards, automations and the calendar" width="960">
+</picture>
+
+- **Why:** Kept knows what's due in your home. Home Assistant is where you already look and automate.
+- **What it does:** brings Kept's counts, vehicles and due dates into Home Assistant; sends readings, such as the car's odometer, back to Kept.
+- **Not needed** without Home Assistant. Kept works the same on its own.
+
 ## What you get
 
 **Per Kept location** (a home, a garage, an office), one device:
