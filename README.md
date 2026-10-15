@@ -1,5 +1,7 @@
 # Kept for Home Assistant
 
+![Kept for Home Assistant: per-location sensors for what is overdue, due, expiring and lent out, and a vehicle's reading and next service](docs/social-preview.png)
+
 [Kept](https://github.com/keptinventory/kept) in Home Assistant: what needs you, each vehicle's
 next service, and readings sent back from Home Assistant.
 

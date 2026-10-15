@@ -1,0 +1,51 @@
+<!-- docs/social-preview.png is rendered from this file (1200×630, headless Chromium). The numbers are the ones a seeded Kept returned in testing. -->
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F2F1EC;--surface:#FBFAF7;--line:#DEDBD3;--ink:#1C1B19;--ink-2:#55524C;--ink-3:#6B675F;--amber:#F0B03A;--amber-ink:#2E2100;--violet:#5B3CC4;--warn:#A6480A;--danger:#B42318;--info:#2459A8}
+*{box-sizing:border-box;margin:0}
+body{width:1200px;height:630px;background:var(--paper);font-family:"IBM Plex Sans",sans-serif;color:var(--ink);overflow:hidden;position:relative}
+.left{position:absolute;left:72px;top:132px;width:470px}
+.left img{height:68px}
+h1{font-size:58px;line-height:1.08;font-weight:700;letter-spacing:-.01em;margin-top:38px}
+.tag{display:inline-flex;align-items:center;gap:12px;margin-top:38px;background:var(--amber);color:var(--amber-ink);font:600 15px "IBM Plex Mono",monospace;letter-spacing:.14em;padding:8px 16px}
+.tag i{width:7px;height:7px;border-radius:50%;background:#fff}
+.right{position:absolute;left:600px;top:40px;width:540px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:0 18px 40px rgba(28,27,25,.10);padding:20px 24px}
+.card h2{font-size:19px;font-weight:600;display:flex;justify-content:space-between;align-items:baseline}
+.card h2 small{font:500 13px "IBM Plex Mono",monospace;color:var(--ink-3)}
+.row{display:flex;align-items:center;gap:14px;padding:9px 0;border-top:1px solid var(--line)}
+.row:first-of-type{border-top:0}
+.dot{width:12px;height:12px;border-radius:50%;flex:none}
+.name{font-size:17px;font-weight:500}
+.id{font:500 12px "IBM Plex Mono",monospace;color:var(--ink-3);margin-top:2px}
+.val{margin-left:auto;font-size:24px;font-weight:600}
+.unit{font-size:15px;font-weight:500;color:var(--ink-2)}
+.two{display:grid;grid-template-columns:1fr;gap:16px;margin-top:14px}
+.flow{display:flex;align-items:center;gap:10px;font:500 14px "IBM Plex Mono",monospace;color:var(--ink-2);margin-top:14px}
+.flow b{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 10px;color:var(--ink);font-weight:600}
+</style></head><body>
+<div class="left">
+  <img src="kept-lockup-light.svg" alt="Kept">
+  <h1>Kept, in Home Assistant.</h1>
+  <div class="tag"><i></i>HACS · APACHE-2.0</div>
+</div>
+<div class="right">
+  <div class="card">
+    <h2>Home <small>location</small></h2>
+    <div class="row"><span class="dot" style="background:var(--danger)"></span><div><div class="name">Overdue</div><div class="id">sensor.home_overdue</div></div><div class="val">2</div></div>
+    <div class="row"><span class="dot" style="background:var(--amber)"></span><div><div class="name">Due</div><div class="id">sensor.home_due</div></div><div class="val">1</div></div>
+    <div class="row"><span class="dot" style="background:var(--warn)"></span><div><div class="name">Expiring</div><div class="id">sensor.home_expiring</div></div><div class="val">1</div></div>
+    <div class="row"><span class="dot" style="background:var(--info)"></span><div><div class="name">Lent out</div><div class="id">sensor.home_lent_out</div></div><div class="val">1</div></div>
+  </div>
+  <div class="two">
+    <div class="card">
+      <h2>Toyota Corolla <small>vehicle</small></h2>
+      <div class="row"><div><div class="name">Reading</div><div class="id">sensor.toyota_corolla_reading</div></div><div class="val">52,340 <span class="unit">km</span></div></div>
+      <div class="row"><div><div class="name">Next service · Oil change</div><div class="id">sensor.toyota_corolla_next_service_at</div></div><div class="val">60,328 <span class="unit">km</span></div></div>
+    </div>
+  </div>
+  <div class="flow"><b>car odometer</b>→<b>kept.log_reading</b>→<b>Kept</b></div>
+</div>
+</body></html>
