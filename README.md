@@ -66,6 +66,19 @@ in its Inbox (`state: needs_review` in the response).
 
 Both return a response (`response_variable` in a script) and need a token that can read and change.
 
+## Kept first
+
+The integration connects to a Kept you already run:
+
+- **On Home Assistant OS:** install Kept as a Home Assistant app, in the same Home Assistant.
+  [![Add Kept to Home Assistant](https://img.shields.io/badge/home%20assistant-add%20Kept-18BCF2?style=flat-square&labelColor=55524C&logo=homeassistant&logoColor=white)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fkeptinventory%2Fkept)
+  Guide: [keptinventory.info/install/home-assistant](https://keptinventory.info/install/home-assistant/).
+  Kept makes tokens only over `https`: turn on the app's **https on Kept's port** option first.
+- **Anywhere else:** Docker Compose or Kubernetes: [keptinventory.info/install/compose](https://keptinventory.info/install/compose/).
+
+The app runs Kept; this integration brings Kept's counts, due dates and vehicles into Home Assistant's
+dashboards, automations and calendar. They are separate on purpose: an app can't add entities.
+
 ## Install
 
 Needs [HACS](https://hacs.xyz/docs/use/download/download/) in Home Assistant, Kept 1.8.0 or later served over `https`, and Home Assistant able to reach Kept. Full guide: [keptinventory.info/users/home-assistant](https://keptinventory.info/users/home-assistant/).
