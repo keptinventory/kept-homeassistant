@@ -12,6 +12,10 @@ Calls (Kept 1.x, D244):
 - GET  /api/v1/schedules                  a schedule's rowVersion, for If-Match
 - POST /api/v1/meters/{id}/readings       log a reading (write token)
 - POST /api/v1/schedules/{id}/complete    mark a schedule done (write token)
+
+Linking from the Kept app in Home Assistant (Kept 1.14.7, keptinventory/kept#376), no token yet:
+- POST /api/v1/home-assistant/link-requests            ask, with the app's link secret
+- POST /api/v1/home-assistant/link-requests/{id}/claim  pending, declined, or the token (once)
 """
 
 from __future__ import annotations
@@ -24,6 +28,7 @@ import aiohttp
 from yarl import URL
 
 PAGE_LIMIT = 200
+LINK_STATES = ("pending", "approved", "declined")
 # Lists are cursor-paged; a household never needs more than this many pages of 200.
 MAX_PAGES = 10
 TIMEOUT = aiohttp.ClientTimeout(total=20)
@@ -162,6 +167,39 @@ class KeptClient:
                 break
             query = {**query, "cursor": cursor}
         return items
+
+    async def open_link(self, link_secret: str) -> dict[str, Any]:
+        """Ask Kept to link: `{id, code, claimKey, expiresAt}`.
+
+        No token: the link secret, from the Kept app's discovery message, is the credential. A
+        wrong secret is a 403 KeptApiError.
+        """
+        body = await self._request(
+            "POST",
+            "/api/v1/home-assistant/link-requests",
+            json={"linkSecret": link_secret},
+            auth=False,
+        )
+        if not isinstance(body, dict) or not all(
+            isinstance(body.get(k), str) for k in ("id", "code", "claimKey")
+        ):
+            raise KeptNotKeptError("no link request")
+        return body
+
+    async def claim_link(self, request_id: str, claim_key: str) -> dict[str, Any]:
+        """The request's state: pending or declined, or approved with the token (once).
+
+        An unknown or ended request is a 404 KeptApiError.
+        """
+        body = await self._request(
+            "POST",
+            f"/api/v1/home-assistant/link-requests/{request_id}/claim",
+            json={"claimKey": claim_key},
+            auth=False,
+        )
+        if not isinstance(body, dict) or body.get("state") not in LINK_STATES:
+            raise KeptNotKeptError("no link state")
+        return body
 
     async def version(self) -> dict[str, Any]:
         """GET /version (no token): `{version, revision, source}`; KeptNotKeptError otherwise."""

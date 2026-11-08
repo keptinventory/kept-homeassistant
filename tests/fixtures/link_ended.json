@@ -1,0 +1,5 @@
+{
+  "error": "Not found.",
+  "code": "not_found",
+  "hint": "This request has ended. Start again from Home Assistant."
+}

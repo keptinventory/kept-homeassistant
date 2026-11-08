@@ -1,5 +1,6 @@
 {
   "config": {
+    "flow_title": "{name}",
     "step": {
       "user": {
         "title": "Connect to Kept",
@@ -25,7 +26,22 @@
         "data": {
           "api_token": "Personal token"
         }
+      },
+      "hassio_confirm": {
+        "title": "Kept, found in this Home Assistant",
+        "description": "The {addon} app runs Kept here. Set it up? Kept then asks someone signed in to it to allow Home Assistant, with the locations they choose. No token to copy."
+      },
+      "link": {
+        "title": "Allow it in Kept",
+        "description": "Ask Kept for a token."
+      },
+      "reauth_link": {
+        "title": "Ask Kept again for {host}",
+        "description": "Kept stopped accepting Home Assistant's token: it was revoked or has expired. Submit to ask Kept for a new one; someone signed in to Kept allows it in Settings → Connections."
       }
+    },
+    "progress": {
+      "allow_in_kept": "In Kept, open Settings → Connections: Home Assistant asks to connect, code {code}. Check the code is the same, then Allow and pick the locations. This waits up to 10 minutes."
     },
     "error": {
       "invalid_url": "Enter the full address, starting with https:// or http://.",
@@ -42,7 +58,13 @@
     },
     "abort": {
       "already_configured": "This Kept is already set up.",
-      "reauth_successful": "The new token works."
+      "reauth_successful": "The new token works.",
+      "not_kept_app": "The app's message isn't one Kept's app sends. Set Kept up with its address and a token.",
+      "link_refused": "Kept refused the request. Restart the Kept app, then try again from Settings → Devices & services.",
+      "link_declined": "Someone in Kept declined it. Start again when you want to connect.",
+      "link_ended": "The request ended before anyone allowed it in Kept. Start again.",
+      "cannot_connect": "Kept can't be reached at that address.",
+      "kept_error": "Kept said: {message}"
     }
   },
   "options": {
