@@ -1,5 +1,6 @@
 {
   "config": {
+    "flow_title": "{name}",
     "step": {
       "user": {
         "title": "الاتصال بـ Kept",
@@ -25,7 +26,22 @@
         "data": {
           "api_token": "الرمز الشخصي"
         }
+      },
+      "hassio_confirm": {
+        "title": "عُثر على Kept في Home Assistant هذا",
+        "description": "يشغّل التطبيق {addon} برنامج Kept هنا. هل تريد إعداده؟ يطلب Kept عندها من شخص مسجَّل الدخول إليه أن يسمح لـ Home Assistant، بالمواقع التي يختارها. لا رمز لتنسخه."
+      },
+      "link": {
+        "title": "اسمح له في Kept",
+        "description": "اطلب رمزًا من Kept."
+      },
+      "reauth_link": {
+        "title": "اطلب من Kept من جديد لـ {host}",
+        "description": "توقف Kept عن قبول رمز Home Assistant: أُلغي أو انتهت صلاحيته. أرسل لتطلب رمزًا جديدًا من Kept؛ يسمح به شخص مسجَّل الدخول إلى Kept من الإعدادات ← الربط."
       }
+    },
+    "progress": {
+      "allow_in_kept": "في Kept، افتح الإعدادات ← الربط: يطلب Home Assistant الاتصال، رمز التحقق {code}. تأكد أنه الرمز نفسه، ثم اضغط سماح واختر المواقع. ينتظر هذا حتى 10 دقائق."
     },
     "error": {
       "invalid_url": "أدخل العنوان كاملًا، بدءًا بـ https://‎ أو http://‎.",
@@ -42,7 +58,13 @@
     },
     "abort": {
       "already_configured": "Kept هذا مُعدّ بالفعل.",
-      "reauth_successful": "الرمز الجديد يعمل."
+      "reauth_successful": "الرمز الجديد يعمل.",
+      "not_kept_app": "رسالة التطبيق ليست مما يرسله تطبيق Kept. أعدّ Kept بعنوانه ورمز.",
+      "link_refused": "رفض Kept الطلب. أعد تشغيل تطبيق Kept، ثم حاول من جديد من الإعدادات ← الأجهزة والخدمات.",
+      "link_declined": "رفضه شخص في Kept. ابدأ من جديد متى أردت الاتصال.",
+      "link_ended": "انتهى الطلب قبل أن يسمح به أحد في Kept. ابدأ من جديد.",
+      "cannot_connect": "تعذّر الوصول إلى Kept على هذا العنوان.",
+      "kept_error": "قال Kept: {message}"
     }
   },
   "options": {

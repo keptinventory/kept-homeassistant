@@ -73,7 +73,8 @@ The integration connects to a Kept you already run:
 - **On Home Assistant OS:** install Kept as a Home Assistant app, in the same Home Assistant.
   [![Add Kept to Home Assistant](https://img.shields.io/badge/home%20assistant-add%20Kept-18BCF2?style=flat-square&labelColor=55524C&logo=homeassistant&logoColor=white)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fkeptinventory%2Fkept)
   Guide: [keptinventory.info/install/home-assistant](https://keptinventory.info/install/home-assistant/).
-  Kept makes tokens only over `https`: turn on the app's **https on Kept's port** option first.
+  The app offers this integration in Home Assistant: no token to copy, no `https` needed
+  ([Set up from the Kept app](#set-up-from-the-kept-app)).
 - **Anywhere else:** Docker Compose or Kubernetes: [keptinventory.info/install/compose](https://keptinventory.info/install/compose/).
 
 The app runs Kept; this integration brings Kept's counts, due dates and vehicles into Home Assistant's
@@ -81,7 +82,7 @@ dashboards, automations and calendar. They are separate on purpose: an app can't
 
 ## Install
 
-Needs [HACS](https://hacs.xyz/docs/use/download/download/) in Home Assistant, Kept 1.8.0 or later served over `https`, and Home Assistant able to reach Kept. Full guide: [keptinventory.info/users/home-assistant](https://keptinventory.info/users/home-assistant/).
+Needs [HACS](https://hacs.xyz/docs/use/download/download/) in Home Assistant, and Home Assistant able to reach Kept: the Kept app in the same Home Assistant, or Kept 1.8.0 or later served over `https`. Full guide: [keptinventory.info/users/home-assistant](https://keptinventory.info/users/home-assistant/).
 
 1. HACS → ⋮ → **Custom repositories**: add `https://github.com/keptinventory/kept-homeassistant`, type **Integration**.
 2. Install **Kept**, restart Home Assistant.
@@ -89,7 +90,34 @@ Needs [HACS](https://hacs.xyz/docs/use/download/download/) in Home Assistant, Ke
 
 Needs Home Assistant 2026.10 or later, and Kept 1.8.0 or later (it adds `GET /api/v1/summary`).
 
-## Set up
+## Set up from the Kept app
+
+With the Kept app (Kept 1.14.7 or later) in the same Home Assistant:
+
+1. **Settings → Devices & services** shows Kept as discovered. Add it and confirm.
+2. Home Assistant shows a code and waits. In Kept, **Settings → Connections**: **Home Assistant asks
+   to connect**, with the same code. **Allow**, then pick the locations and **Read only** or
+   **Read and change**.
+3. Home Assistant finishes on its own; the next step names the Kept version and the locations.
+
+How the credential works:
+
+- **What it is:** an ordinary Kept personal token named **Home Assistant**, made by the person who
+  allowed it and acting as them, limited to the locations and access they picked.
+- **How it is asked for:** the app sends Home Assistant a Supervisor discovery message with Kept's
+  name on Home Assistant's internal network and the app's link secret. Only Home Assistant reads
+  discovery messages. The integration asks Kept with that secret; Kept answers with a code and a
+  claim key that only this request holds.
+- **How it is handed over:** once, to the claim key, over Home Assistant's internal network, never
+  through a browser. It is stored in the config entry like a token typed in by hand.
+- **Revoke or rotate:** revoke it in Kept (**Settings → Connections**). Home Assistant then asks to
+  reconnect, and Kept shows a new request to allow. Nothing is handed out without that.
+- **Ends:** a request nobody allows within 10 minutes, or one that is declined, gives Home Assistant
+  nothing.
+
+## Set up with a token
+
+For Kept running anywhere else (Docker Compose, Kubernetes), or to set it up by hand:
 
 1. In Kept: **Settings → Connections → New token**. Pick the locations. **Read only** is enough for
    the sensors and the calendar; **Read and change** also lets the actions write. Kept makes tokens
@@ -130,6 +158,9 @@ mode: queued
 meter's.
 
 ## How it reads Kept
+
+Set up from the app, it first asks `POST /api/v1/home-assistant/link-requests` (the link secret)
+and `POST /api/v1/home-assistant/link-requests/{id}/claim` (the claim key) for its token.
 
 Every few minutes, three calls with the token: `GET /api/v1/summary` (the counts per location),
 `GET /api/v1/vehicles` and the first page of `GET /api/v1/agenda`. The calendar asks

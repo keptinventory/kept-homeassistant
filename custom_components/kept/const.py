@@ -9,6 +9,14 @@ DOMAIN: Final = "kept"
 
 CONF_LOCATIONS: Final = "locations"
 CONF_SCAN_MINUTES: Final = "scan_minutes"
+# The Kept app's link secret, from its discovery message (keptinventory/kept#376): lets this entry
+# ask Kept again for a token when the one it has stops working.
+CONF_LINK_SECRET: Final = "link_secret"
+
+# Asking the Kept app for a token: how often to look whether someone allowed it, and how long at
+# most (Kept forgets a request after 10 minutes).
+LINK_POLL_SECONDS: Final = 2
+LINK_WAIT_SECONDS: Final = 11 * 60
 
 DEFAULT_SCAN_MINUTES: Final = 5
 MIN_SCAN_MINUTES: Final = 1
